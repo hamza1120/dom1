@@ -19,7 +19,7 @@
             <button class="increase-quantity btn btn-info">+</button>
             <button class="decrease-quantity btn btn-info">-</button>
             <button class="delete-item btn btn-danger">Delete</button>
-            <button class="like-item"><i class="fa-regular fa-heart fa-2xl" style="color: #e50606;"></i></button>
+            <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></Button>
           </li>
           <li class="item">
             <img src="./burger.jpg"  alt="sushi">
@@ -28,7 +28,7 @@
             <button class="increase-quantity btn btn-info">+</button>
             <button class="decrease-quantity btn btn-info">-</button>
             <button class="delete-item btn btn-danger">Delete</button>
-            <button class="like-item"><i class="fa-regular fa-heart fa-2xl" style="color: #e50606;"></i></button>
+            <Button onclick="Toggle2()" id="btnh2" class="btn"><i class="fas fa-heart"></i></Button>
           </li>
           <li class="item">
             <img src="./sushi.jpg"  alt="sushi">
@@ -37,7 +37,7 @@
             <button class="increase-quantity btn btn-info">+</button>
             <button class="decrease-quantity btn btn-info">-</button>
             <button class="delete-item btn btn-danger">Delete</button>
-            <button class="like-item"><i class="fa-regular fa-heart fa-2xl" style="color: #e50606;"></i></button>
+            <Button onclick="Toggle3()" id="btnh3" class="btn"><i class="fas fa-heart"></i></Button>
           </li>
           <li class="item">
             <img src="./pasta.jpg"  alt="sushi">
@@ -46,7 +46,7 @@
             <button class="increase-quantity btn btn-info">+</button>
             <button class="decrease-quantity btn btn-info">-</button>
             <button class="delete-item btn btn-danger">Delete</button>
-            <button class="like-item"><i class="fa-regular fa-heart fa-2xl" style="color: #e50606;"></i></button>
+            <Button onclick="Toggle4()" id="btnh4" class="btn"><i class="fas fa-heart"></i></Button>
           </li>
           <li class="item">
             <img src="./kafteji.jpg"  alt="sushi">
@@ -55,11 +55,74 @@
             <button class="increase-quantity btn btn-info">+</button>
             <button class="decrease-quantity btn btn-info">-</button>
             <button class="delete-item btn btn-danger">Delete</button>
-            <button class="like-item"><i class="fa-regular fa-heart fa-2xl" style="color: #e50606;"></i></button>
+            <Button onclick="Toggle5()" id="btnh5" class="btn"><i class="fas fa-heart"></i></Button>
           </li>
         </ul>
         <div id="total-price">Total Price: $0</div>
       </div>
-<script src="script.js"></script>      
+<script src="script.js"></script>  
+
+
+<script>
+       
+
+  // First Like Button   
+     var btnvar1 = document.getElementById('btnh1');
+
+     function Toggle1(){
+              if (btnvar1.style.color =="red") {
+                  btnvar1.style.color = "grey"
+              }
+              else{
+                  btnvar1.style.color = "red"
+              }
+     }
+
+     var btnvar2 = document.getElementById('btnh2');
+
+     function Toggle2(){
+              if (btnvar2.style.color =="red") {
+                btnvar2.style.color = "grey"
+              }
+              else{
+                btnvar2.style.color = "red"
+              }
+     }
+    
+    
+     var btnvar3= document.getElementById('btnh3');
+
+function Toggle3(){
+         if (btnvar3.style.color =="red") {
+           btnvar3.style.color = "grey"
+         }
+         else{
+           btnvar3.style.color = "red"
+         }
+}
+
+ 
+var btnvar4= document.getElementById('btnh4');
+
+function Toggle4(){
+         if (btnvar4.style.color =="red") {
+           btnvar4.style.color = "grey"
+         }
+         else{
+           btnvar4.style.color = "red"
+         }
+        }
+        var btnvar5 = document.getElementById('btnh5');
+
+function Toggle5(){
+         if (btnvar5.style.color =="red") {
+           btnvar5.style.color = "grey"
+         }
+         else{
+           btnvar5.style.color = "red"
+         }
+}
+</script>
+
 </body>
 </html>  

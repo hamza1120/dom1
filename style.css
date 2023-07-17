@@ -22,12 +22,7 @@ img{
   border: none;
 }
 
-
-.like-item i.fa-heart {
-    color: #e50606; /* Default heart color */
-  }
-  
-  .like-item.active i.fa-heart {
-    color: red; /* Red color for the active/liked heart */
-  }
-  
+.like-item{
+    padding: 0;
+    background: transparent;
+}
