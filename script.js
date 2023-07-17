@@ -62,3 +62,15 @@ function updateTotalPrice() {
   });
   totalPriceElement.textContent = `Total Price: $${totalPrice}`;
 }
+
+// Get all the heart buttons
+var heartButtons = document.getElementsByClassName("like-item");
+
+// Iterate through each heart button
+for (var i = 0; i < heartButtons.length; i++) {
+  // Add a click event listener to each heart button
+  heartButtons[i].addEventListener("click", function () {
+    // Change the color of the heart icon to yellow
+    this.firstChild.style.color = "yellow";
+  });
+}
